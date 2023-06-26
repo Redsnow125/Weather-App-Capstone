@@ -1,0 +1,6 @@
+MVP
+
+login
+can save weather locations 
+can delete weather locations
+when logged out shows local weather
