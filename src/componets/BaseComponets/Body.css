@@ -1,0 +1,23 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.test{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardTest{
+    background-color: white;
+    padding: 3rem 5rem;
+    color: black;
+    width: 300px;
+}
+
+.card p{
+    padding-top: 1rem;
+    line-height: 150%;
+} */

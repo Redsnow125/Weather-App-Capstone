@@ -1,0 +1,18 @@
+#searchContainer{
+    width: 30%;
+}
+#searchFeild{
+    width: 100px;
+    border-radius: 25px;
+    border-width: 1px;
+    /* border-color: azure; */
+    background-color: lightgray;
+}
+#searchBtn{
+    border-radius: 25px;
+    background-color: lightgray;
+    color: darkgray;
+}
+#searchBtn:hover{
+    cursor: pointer;
+}   

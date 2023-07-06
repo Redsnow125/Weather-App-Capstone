@@ -1,0 +1,21 @@
+#containerfoot{
+    margin: 0%;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+#footerCard{
+    height: 100px;
+    /* background-color: darkolivegreen; */
+    margin-left:  4vw;
+    margin-right: 4vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    flex-direction: column;
+}

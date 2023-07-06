@@ -1,0 +1,33 @@
+#containerhead{
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+#search-state{
+    width: 30%;
+}
+#header{
+    height: 100px;
+    background-color: #172121;
+    color: #F2E9E4;
+    margin-left:  4vw;
+    margin-right: 4vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    justify-content: space-around;
+    
+}
+#logo{
+    height: 80%;
+}
+#logout{
+    width: 30%;
+}
+#logout:hover{
+    cursor: pointer;
+}

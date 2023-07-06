@@ -1,0 +1,21 @@
+#formContain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: column;
+}
+.formClass{
+  margin: 9px;  
+  
+}
+#formCard{
+    background-color: #172121;
+    width: 35vw;
+    height: 35vh;
+    border-radius: 25px;
+}
+#formlogo{
+    height: 30vh;
+    margin: 2vh;
+}

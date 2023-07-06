@@ -1,0 +1,25 @@
+#container {
+  margin: 0%;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 93vw;
+}
+
+#weatherCard {
+  height: 145px;
+  background-color:#F2F4F3;
+  color: #7F7B82;
+  margin-left: 4vw;
+  margin-right: 1vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  justify-content: space-around;
+}
+#weatherCard:hover{
+  cursor:pointer;
+}

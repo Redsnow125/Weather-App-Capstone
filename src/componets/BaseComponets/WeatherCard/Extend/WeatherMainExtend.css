@@ -1,0 +1,50 @@
+#holder{
+  display: flex;
+  flex-direction: column;
+}
+#mainExtend{
+  
+  }
+  #titles {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #submain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    font-size: 200%;
+  }
+  #details{
+    height: 33%;
+    font-size: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #desc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+
+  }
+  #hilo{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+  }
+  #water{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  #air{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }

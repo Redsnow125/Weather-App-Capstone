@@ -1,33 +1,38 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
+import { Landing } from "../componets/Landing/Landing";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { DataContext } from "../Context/DataContext";
+import Form from "../componets/Login/Form";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [auth, setAuth] = useState(false);
+  const [savedCards, setSavedCards] = useState([84115, 84043, 10001, 96150]);
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <DataContext.Provider
+      value={{
+        savedCards,
+        setSavedCards,
+        setAuth
+      }}
+    >
+      <div className="App">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              !auth ? <Form setAuth={setAuth} /> : <Navigate to="/landing" />
+            }
+          />
+          <Route
+            path="/landing"
+            element={auth ? <Landing setAuth={setAuth} /> : <Navigate to="/" />}
+          />
+        </Routes>
+        {/* <Landing /> */}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR!
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    </DataContext.Provider>
   );
 }
 
